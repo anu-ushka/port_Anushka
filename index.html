@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lucida Sans', sans-serif;
+            background-color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+        }
+
+        header {
+            background: #a8907a;
+            color: #333;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navbar a:hover {
+            color: #fefefe;
+        }
+
+        .contact-box {
+            background-color: #f5f2dc;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .contact {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .contact:hover {
+            background-color: #cb9b7e;
+            color: white;
+        }
+
+        .main-content {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .text {
+            max-width: 600px;
+            margin-right: 30px;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rosybrown;
+            font-size: 60px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease; 
+        }
+
+        h2:hover {
+            transform: scale(1.1); 
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            color: #a29d9d;
+            line-height: 1.6;
+        }
+
+        .image {
+            height: 300px;
+            width: 220px;
+            border-radius: 50%;
+            border: 4px solid #b5a7a7;
+            padding: 10px;
+            margin-left: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            position: relative;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .logos {
+            font-size: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .logos i {
+            cursor: pointer;
+        }
+
+        .logos i:hover {
+            transform: translateY(-5px);
+        }
+
+        .logos i:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Anushka</a>
+        <nav class="navbar">
+            <a href="#">About Me</a>
+            <a href="#">Education</a>
+            <a href="#">Projects</a>
+        </nav>
+        <div class="contact-box">
+            <a href="#" class="contact">Contact Me</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="text">
+            <h2>Hello, I am Anushka</h2>
+            <p>I'm a passionate web developer who loves creating unique and user-friendly web applications.</p>
+        </div>
+        <img class="image" src="images2/girl_image.jpg" alt="Anushka's image">
+    </div>
+
+    <footer>
+        <div class="logos">
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-discord"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
